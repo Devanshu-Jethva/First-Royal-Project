@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+    </head>
+    <style>
+        * {
+            padding: 0em;
+            margin: 0em;
+            box-sizing: border-box;
+        }
+        .links {
+            padding: 1em;
+            /* border-bottom: 10px; */
+            border-bottom-style: solid;
+            border-color: grey;
+            /* background-color: aqua; */
+        }
+
+        div nav {
+            text-align: center;
+        }
+
+        div nav a {
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .socialmedia {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: right;
+        }
+
+        .socialmedia img {
+            width: 25px;
+            height: 25px;
+            /* text-align: right; */
+            
+        }
+
+        h1 {
+            padding-bottom: .5em;
+            padding-top: .5em;
+            /* margin-bottom: 50px; */
+            text-align: center;
+        }
+        #send,
+        form > input {
+            /* text-align: center; */
+            display: block;
+            /* text-align: center; */
+            margin: auto;
+            margin-bottom: 5px;
+        }
+        form > label {
+            margin-bottom: 5px;
+            display: block;
+            text-align: center;
+        }
+        div select{
+            margin-bottom: 5px;
+        }
+        .centerdiv {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .centertag{
+            /* margin: auto; */
+            /* align-items: center; */
+            display: inline-block;
+        }
+        textarea{
+            display: block;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .tandc{
+            display: block;
+            /* margin: auto; */
+            text-align: center;
+        }
+        #tandc{
+            display: block;
+            margin: auto;
+        }
+        #lname{
+            margin-bottom: 10px;
+        }
+        #select{
+            margin-right: 10px;
+        }
+        #eandp{
+            margin-bottom: 10px;
+        }
+        #send{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        #grad{
+            background-color: #4158D0;
+            background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            padding-bottom: 1.5rem;
+        }
+    </style>
+
+    <body>
+        <div class="links">
+            <nav>
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a>
+                <a href="Client.html">Client</a>
+            </nav>
+        </div>
+
+        <div id="grad">
+            <h1>Get in touch with us!</h1>
+            <form action="">
+                <label for="fname">First name:</label>
+                <input type="text" name="firstname" id="fname" />
+                <label for="lname">Last name:</label>
+                <input type="text" name="lastname" id="lname" />
+                <div class="centerdiv">
+                    <select name="countryname" id="select" class="centertag" >
+                        <option value="1">India</option>
+                        <optgroup label="Other countries">
+                            <option data-countryCode="DZ" value="213">
+                                Algeria (+213)
+                            </option>
+                            <option data-countryCode="AD" value="376">
+                                Andorra (+376)
+                            </option>
+                            <option data-countryCode="AO" value="244">
+                                Angola (+244)
+                            </option>
+                            <option data-countryCode="AR" value="54">
+                                Argentina (+54)
+                            </option>
+                            <option data-countryCode="AM" value="374">
+                                Armenia (+374)
+                            </option>
+                            <option data-countryCode="AW" value="297">
+                                Aruba (+297)
+                            </option>
+                            <option data-countryCode="AU" value="61">
+                                Australia (+61)
+                            </option>
+                            <option data-countryCode="AT" value="43">
+                                Austria (+43)
+                            </option>
+                            <option data-countryCode="AZ" value="994">
+                                Azerbaijan (+994)
+                            </option>
+                            <input
+                                type="text"
+                                name="state"
+                                class="centertag"
+                                placeholder="State/Provience"
+                            />
+                        </optgroup>
+                    </select>
+                    <!-- <input type="text" name="state" id="" placeholder="State/Provience"> -->
+                </div>
+                <div class="centerdiv" id="eandp">
+                    <input
+                        type="email"
+                        name="email"
+                        class="centertag"
+                        placeholder="Email"
+                    />
+                    <input
+                        type="password"
+                        name="password"
+                        class="centertag"
+                        placeholder="Password"
+                    />
+                </div>
+                <label for="">Gender:</label>
+                <div class="centerdiv">
+                    <input type="radio" name="gender" id="" class="gender" />
+                    <label for="" class="gender">Male</label>
+                    <input type="radio" name="gender" id="" class="gender" />
+                    <label for="" class="gender">Female</label>
+                    <input type="radio" name="gender" id="" class="gender" />
+                    <label for="" class="gender">Other</label>
+                </div>
+                <label for="">Type your query below:</label>
+                <div >
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="centerdiv">
+                    <input type="checkbox" name="tandc" required class="centertag"><label for="" class="centertag">I agree to terms and conditions</label>
+                </div>
+                <div class="centerdiv">
+                    <input type="checkbox" name="noti" class="centertag" checked><label for="" class="centertag">I wish to get notifications from your website</label>
+                </div>
+                <input type="submit" value="Send" id="send" />
+            </form>
+        </div>
+        <hr />
+        <div class="socialmedia">
+            <font> Follow us on : </font>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/insta.png" alt="" 
+            /></a>
+            <a href="https://www.facebook.com" target="_blank"
+                ><img src="images/facebook.png" alt=""
+            /></a>
+            <a href="https://www.linkedin.com" target="_blank"
+                ><img src="images/linkedin-removebg-preview.png" alt=""
+            /></a>
+            <a href="https://www.twitter.com" target="_blank"
+                ><img src="images/twitter.png" alt=""
+            /></a>
+        </div>
+        <hr />
+    </body>
+</html>
